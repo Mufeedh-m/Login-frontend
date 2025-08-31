@@ -17,7 +17,7 @@ function App() {
        }
 
        function checked(){
-        var logindetails = axios.get(`http://localhost:3000/login?username=${user}&password=${pass}`)
+        var logindetails = axios.get(`https://login-backend-2-6ewe.onrender.com/login?username=${user}&password=${pass}`)
         logindetails.then(function(data){
           if(data.data==true){
             navigate('/success')
